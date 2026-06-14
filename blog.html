@@ -1,0 +1,1898 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- =========================
+        BASIC META
+    ========================== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ & Caregiver Resources | Michigan Family Caregiver LLC</title>
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png">
+    <link rel="apple-touch-icon" href="assets/images/favicon.png">
+    <meta name="description" content="Frequently asked questions about Michigan caregiver eligibility, Home Help Program guidance, CHAMPS enrollment, family caregivers, documents, and home care support from Michigan Family Caregiver LLC.">
+
+    <!-- =========================
+        GOOGLE FONT
+    ========================== -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- =========================
+        FONT AWESOME
+    ========================== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- =========================
+        CSS FILES
+    ========================== -->
+
+    <link rel="stylesheet" href="css/test.css">
+
+    <!-- =========================
+        BLOG / FAQ PAGE CSS
+    ========================== -->
+    <style>
+/* =========================================================
+BLOG FAQ HERO SECTION
+========================================================= */
+
+.blog-hero-section{
+    position:relative;
+    padding:88px 0 82px;
+    background:
+    radial-gradient(circle at 8% 12%,rgba(217,185,109,.18),transparent 28%),
+    radial-gradient(circle at 92% 8%,rgba(21,87,127,.14),transparent 34%),
+    linear-gradient(180deg,#ffffff 0%,#f7fbff 100%);
+    overflow:hidden;
+}
+
+body.dark-mode .blog-hero-section{
+    background:
+    radial-gradient(circle at 8% 12%,rgba(217,185,109,.12),transparent 28%),
+    radial-gradient(circle at 92% 8%,rgba(47,111,159,.18),transparent 34%),
+    linear-gradient(180deg,#102b44 0%,#183752 100%);
+}
+
+.blog-hero-layout{
+    display:grid;
+    grid-template-columns:1.08fr .92fr;
+    gap:54px;
+    align-items:center;
+}
+
+.blog-hero-content{
+    max-width:760px;
+}
+
+.blog-hero-content h1{
+    color:var(--blue-deep);
+    font-size:clamp(2.7rem,5vw,5.3rem);
+    line-height:1.02;
+    font-weight:800;
+    letter-spacing:-.065em;
+    margin:14px 0 22px;
+}
+
+body.dark-mode .blog-hero-content h1{
+    color:var(--white);
+}
+
+.blog-hero-content p{
+    max-width:690px;
+    color:var(--text-muted);
+    font-size:1.04rem;
+    line-height:1.78;
+    margin-bottom:32px;
+}
+
+.blog-hero-actions{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    flex-wrap:wrap;
+}
+
+/* =========================================================
+BLOG HERO CARD
+========================================================= */
+
+.blog-hero-card{
+    position:relative;
+    padding:36px;
+    border-radius:32px;
+    background:linear-gradient(180deg,rgba(255,255,255,.98),rgba(246,249,252,.96));
+    border:1px solid var(--border-gold);
+    box-shadow:var(--shadow-lg);
+    overflow:hidden;
+}
+
+body.dark-mode .blog-hero-card{
+    background:linear-gradient(180deg,rgba(24,55,82,.98),rgba(18,47,73,.96));
+    border-color:rgba(217,185,109,.18);
+}
+
+.blog-hero-card::before{
+    content:"";
+    position:absolute;
+    inset:0 0 auto;
+    height:5px;
+    background:linear-gradient(90deg,var(--blue-deep),var(--gold-bright),var(--blue-mid));
+}
+
+.blog-hero-card-icon{
+    width:76px;
+    height:76px;
+    border-radius:24px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:var(--white);
+    background:linear-gradient(135deg,var(--gold-bright),var(--gold-main),var(--gold-dark));
+    font-size:1.95rem;
+    box-shadow:var(--shadow-gold);
+    margin-bottom:24px;
+}
+
+.blog-hero-card h3{
+    color:var(--blue-deep);
+    font-size:1.6rem;
+    line-height:1.18;
+    font-weight:820;
+    letter-spacing:-.04em;
+    margin-bottom:12px;
+}
+
+body.dark-mode .blog-hero-card h3{
+    color:var(--white);
+}
+
+.blog-hero-card p{
+    color:var(--text-muted);
+    font-size:.95rem;
+    line-height:1.7;
+    margin-bottom:24px;
+}
+
+.blog-mini-list{
+    display:grid;
+    gap:13px;
+}
+
+.blog-mini-list span{
+    display:flex;
+    align-items:center;
+    gap:11px;
+    color:var(--text-muted);
+    font-size:.92rem;
+    font-weight:700;
+}
+
+.blog-mini-list i{
+    width:22px;
+    height:22px;
+    border-radius:50%;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    color:var(--gold-main);
+    background:rgba(217,185,109,.12);
+    font-size:.72rem;
+}
+
+/* =========================================================
+TABLET
+========================================================= */
+
+@media(max-width:1024px){
+
+    .blog-hero-layout{
+        grid-template-columns:1fr;
+        gap:34px;
+    }
+
+    .blog-hero-content{
+        max-width:100%;
+    }
+}
+
+/* =========================================================
+MOBILE
+========================================================= */
+
+@media(max-width:768px){
+
+    .blog-hero-section{
+        padding:60px 0;
+    }
+
+    .blog-hero-layout{
+        gap:26px;
+    }
+
+    .blog-hero-content{
+        text-align:center;
+    }
+
+    .blog-hero-content h1{
+        font-size:2.35rem;
+        line-height:1.05;
+    }
+
+    .blog-hero-content p{
+        font-size:.94rem;
+        margin-inline:auto;
+    }
+
+    .blog-hero-actions{
+        justify-content:center;
+    }
+
+    .blog-hero-card{
+        padding:26px;
+        border-radius:24px;
+    }
+
+    .blog-hero-card-icon{
+        width:66px;
+        height:66px;
+        border-radius:20px;
+        font-size:1.65rem;
+    }
+
+    .blog-hero-card h3{
+        font-size:1.35rem;
+    }
+}
+
+@media(max-width:480px){
+
+    .blog-hero-section{
+        padding:52px 0;
+    }
+
+    .blog-hero-content h1{
+        font-size:2rem;
+    }
+
+    .blog-hero-card{
+        padding:22px;
+    }
+}
+
+
+        /* =========================================================
+           FAQ CONTROL SECTION
+        ========================================================= */
+
+        .faq-control-section {
+            padding: 72px 0 40px;
+            background: var(--bg-main);
+        }
+
+        .faq-control-panel {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 18px;
+            align-items: center;
+            padding: 24px;
+            border-radius: 28px;
+            background: var(--bg-card);
+            border: 1px solid var(--border-light);
+            box-shadow: var(--shadow-md);
+            margin-top: 28px;
+        }
+
+        .faq-search-box {
+            position: relative;
+        }
+
+        .faq-search-box i {
+            position: absolute;
+            left: 18px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--gold-main);
+            font-size: 1rem;
+        }
+
+        .faq-search-box input {
+            width: 100%;
+            min-height: 56px;
+            border-radius: 999px;
+            border: 1px solid var(--border-light);
+            background: var(--bg-soft);
+            color: var(--text-dark);
+            padding: 0 20px 0 48px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            outline: none;
+            transition: var(--transition);
+        }
+
+        .faq-search-box input:focus {
+            border-color: var(--gold-main);
+            box-shadow: 0 0 0 4px rgba(217, 185, 109, 0.16);
+            background: var(--white);
+        }
+
+        body.dark-mode .faq-search-box input {
+            background: rgba(255, 255, 255, 0.08);
+            border-color: rgba(255, 255, 255, 0.14);
+            color: var(--white);
+        }
+
+        .faq-action-buttons {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .faq-small-btn {
+            min-height: 46px;
+            padding: 0 18px;
+            border-radius: 999px;
+            border: 1px solid var(--border-light);
+            background: var(--white);
+            color: var(--blue-deep);
+            font-size: 0.85rem;
+            font-weight: 800;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .faq-small-btn:hover {
+            background: var(--blue-main);
+            color: var(--white);
+            border-color: var(--blue-main);
+        }
+
+        body.dark-mode .faq-small-btn {
+            background: rgba(255, 255, 255, 0.08);
+            color: var(--white);
+            border-color: rgba(255, 255, 255, 0.14);
+        }
+
+        .faq-filter-chips {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 18px;
+        }
+
+        .faq-filter-chip {
+            min-height: 42px;
+            padding: 0 18px;
+            border-radius: 999px;
+            border: 1px solid var(--border-light);
+            background: var(--bg-card);
+            color: var(--text-muted);
+            font-size: 0.84rem;
+            font-weight: 800;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .faq-filter-chip:hover,
+        .faq-filter-chip.active {
+            background: linear-gradient(135deg, var(--blue-main), var(--blue-dark));
+            color: var(--white);
+            border-color: transparent;
+            box-shadow: 0 12px 28px rgba(21, 87, 127, 0.22);
+        }
+
+        body.dark-mode .faq-filter-chip {
+            background: rgba(255, 255, 255, 0.07);
+            border-color: rgba(255, 255, 255, 0.12);
+        }
+
+
+        /* =========================================================
+           FAQ LIST SECTION
+        ========================================================= */
+
+        .faq-main-section {
+            padding: 38px 0 88px;
+            background: var(--bg-main);
+        }
+
+        .faq-results-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 18px;
+            color: var(--text-muted);
+            font-size: 0.92rem;
+            font-weight: 700;
+        }
+
+        .faq-results-bar strong {
+            color: var(--gold-main);
+        }
+
+        .faq-accordion-list {
+            display: grid;
+            gap: 16px;
+        }
+
+        .faq-accordion-item {
+            border-radius: 24px;
+            background: var(--bg-card);
+            border: 1px solid var(--border-light);
+            box-shadow: var(--shadow-sm);
+            overflow: hidden;
+            transition: var(--transition);
+        }
+
+        body.dark-mode .faq-accordion-item {
+            background:
+                linear-gradient(180deg, rgba(24, 55, 82, 0.98), rgba(18, 47, 73, 0.96));
+            border-color: rgba(217, 185, 109, 0.16);
+        }
+
+        .faq-accordion-item:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-md);
+            border-color: var(--border-gold);
+        }
+
+        .faq-question-btn {
+            width: 100%;
+            display: grid;
+            grid-template-columns: auto 1fr auto;
+            gap: 18px;
+            align-items: center;
+            text-align: left;
+            padding: 24px 26px;
+            background: transparent;
+            border: 0;
+            cursor: pointer;
+        }
+
+        .faq-number {
+            width: 42px;
+            height: 42px;
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--gold-soft);
+            color: var(--gold-dark);
+            font-size: 0.86rem;
+            font-weight: 900;
+        }
+
+        body.dark-mode .faq-number {
+            background: rgba(217, 185, 109, 0.14);
+            color: var(--gold-bright);
+        }
+
+        .faq-question-text span {
+            display: inline-flex;
+            color: var(--gold-main);
+            font-size: 0.7rem;
+            font-weight: 850;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            margin-bottom: 7px;
+        }
+
+        .faq-question-text h3 {
+            color: var(--blue-deep);
+            font-size: 1.08rem;
+            line-height: 1.35;
+            font-weight: 820;
+            letter-spacing: -0.025em;
+        }
+
+        body.dark-mode .faq-question-text h3 {
+            color: var(--white);
+        }
+
+        .faq-toggle-icon {
+            width: 38px;
+            height: 38px;
+            border-radius: 999px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--blue-deep);
+            background: var(--bg-soft);
+            transition: var(--transition);
+        }
+
+        body.dark-mode .faq-toggle-icon {
+            color: var(--white);
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .faq-accordion-item.active .faq-toggle-icon {
+            transform: rotate(45deg);
+            background: var(--gold-main);
+            color: var(--white);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.35s ease;
+        }
+
+        .faq-answer-inner {
+            padding: 0 26px 26px 86px;
+            color: var(--text-muted);
+            font-size: 0.96rem;
+            line-height: 1.75;
+        }
+
+        .faq-answer-inner ul {
+            margin-top: 12px;
+            display: grid;
+            gap: 8px;
+        }
+
+        .faq-answer-inner li {
+            display: flex;
+            gap: 9px;
+            align-items: flex-start;
+        }
+
+        .faq-answer-inner li i {
+            color: var(--gold-main);
+            margin-top: 5px;
+        }
+
+        .faq-hidden {
+            display: none;
+        }
+
+        .faq-no-results {
+            display: none;
+            padding: 34px;
+            border-radius: 28px;
+            background: var(--bg-card);
+            border: 1px solid var(--border-light);
+            text-align: center;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .faq-no-results.active {
+            display: block;
+        }
+
+        .faq-no-results i {
+            width: 68px;
+            height: 68px;
+            border-radius: 24px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--gold-soft);
+            color: var(--gold-dark);
+            font-size: 1.6rem;
+            margin-bottom: 14px;
+        }
+
+        .faq-no-results h3 {
+            color: var(--blue-deep);
+            font-size: 1.35rem;
+            margin-bottom: 8px;
+        }
+
+        body.dark-mode .faq-no-results h3 {
+            color: var(--white);
+        }
+
+        .faq-no-results p {
+            color: var(--text-muted);
+        }
+
+
+        /* =========================================================
+           BLOG CTA
+        ========================================================= */
+
+        .blog-cta-section {
+            padding: 78px 0;
+            color: var(--white);
+            background:
+                radial-gradient(circle at 12% 12%, rgba(217, 185, 109, 0.22), transparent 34%),
+                linear-gradient(135deg, var(--blue-deep), var(--blue-dark) 58%, #123b5e);
+        }
+
+        .blog-cta-box {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 28px;
+            align-items: center;
+            padding: 34px;
+            border-radius: 32px;
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(217, 185, 109, 0.24);
+            backdrop-filter: blur(14px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .blog-cta-box h2 {
+            color: var(--white);
+            font-size: clamp(1.8rem, 3vw, 3.2rem);
+            line-height: 1.1;
+            font-weight: 780;
+            letter-spacing: -0.05em;
+            margin: 8px 0 10px;
+        }
+
+        .blog-cta-box p {
+            max-width: 760px;
+            color: rgba(255, 255, 255, 0.78);
+            line-height: 1.65;
+        }
+
+        @media (max-width: 1024px) {
+            .blog-hero-layout,
+            .blog-cta-box {
+                grid-template-columns: 1fr;
+            }
+
+            .faq-control-panel {
+                grid-template-columns: 1fr;
+            }
+
+            .faq-action-buttons {
+                flex-wrap: wrap;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .blog-hero-section {
+                padding: 54px 0 58px;
+            }
+
+            .blog-hero-content h1 {
+                font-size: 2.15rem;
+                letter-spacing: -0.045em;
+            }
+
+            .blog-hero-card {
+                padding: 24px;
+                border-radius: 26px;
+            }
+
+            .faq-control-section {
+                padding: 54px 0 28px;
+            }
+
+            .faq-control-panel {
+                padding: 18px;
+                border-radius: 22px;
+            }
+
+            .faq-action-buttons {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                width: 100%;
+            }
+
+            .faq-small-btn {
+                width: 100%;
+            }
+
+            .faq-question-btn {
+                grid-template-columns: 1fr auto;
+                gap: 12px;
+                padding: 20px;
+            }
+
+            .faq-number {
+                display: none;
+            }
+
+            .faq-answer-inner {
+                padding: 0 20px 22px;
+            }
+
+            .blog-cta-box {
+                padding: 24px;
+                border-radius: 24px;
+            }
+
+            .blog-cta-box .btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- =========================
+        TOP BAR
+    ========================== -->
+    <div class="top-bar">
+        <div class="container top-bar-inner">
+
+            <div class="top-left">
+                <a href="tel:+18102073799">
+                    <i class="fa-solid fa-phone"></i>
+                    (810) 207-3799
+                </a>
+
+                <a href="fax:+18102073999">
+                    <i class="fa-solid fa-fax"></i>
+                    Fax: (810) 207-3999
+                </a>
+
+                <a href="mailto:info@michiganfamilycaregiverllc.com">
+                    <i class="fa-solid fa-envelope"></i>
+                    info@michiganfamilycaregiverllc.com
+                </a>
+
+                <a href="https://maps.app.goo.gl/53RwJ7epQXeNBymy7">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>2700 Robert T Longway Blvd, STE D, Flint, MI 48503</span>
+                </a>
+            </div>
+
+            <div class="top-right">
+                <a href="#" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="#" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#" aria-label="X">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+
+                <a href="#" aria-label="TikTok">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+
+                <select class="language-select" aria-label="Select language">
+                    <option value="en">English</option>
+                    <option value="es">Spanish</option>
+                    <option value="bn">Bangla</option>
+                </select>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- =========================
+        HEADER
+    ========================== -->
+    <header class="main-header" id="mainHeader">
+        <div class="container header-inner">
+
+            <a href="index.html" class="logo-box">
+                <img src="assets/images/logo.png" alt="Michigan Family Caregiver LLC Logo">
+
+                <div class="logo-text">
+                    <h1>Michigan Family Caregiver</h1>
+                    <span>LLC</span>
+                </div>
+            </a>
+
+            <nav class="navbar" id="navbar">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="career.html">Career</a>
+                <a href="resources.html">Resources</a>
+                <a href="blog.html" class="active">Blog</a>
+            </nav>
+
+            <div class="header-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark and light theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+
+                <button class="hamburger" id="hamburger" aria-label="Open menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+
+        </div>
+    </header>
+
+
+    <!-- =========================
+        MAIN CONTENT
+    ========================== -->
+    <main>
+
+        <!-- =========================
+            BLOG / FAQ HERO
+        ========================== -->
+        <section class="blog-hero-section">
+
+            <div class="container blog-hero-layout">
+
+                <div class="blog-hero-content">
+                    <span class="section-kicker">Caregiver FAQ Center</span>
+
+                    <h1>Helpful Answers for Michigan Families and Caregivers.</h1>
+
+                    <p>
+                        Get clear answers about caregiver eligibility, family caregiver options, CHAMPS enrollment,
+                        Michigan Home Help Program guidance, required documents, and how Michigan Family Caregiver LLC
+                        can help you move forward with confidence.
+                    </p>
+
+                    <div class="blog-hero-actions">
+                        <a href="#faqList" class="btn btn-primary">
+                            Browse Questions
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                        <a href="contact.html" class="btn btn-light">
+                            Ask Our Team
+                            <i class="fa-solid fa-circle-question"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="blog-hero-card">
+                    <div class="blog-hero-card-icon">
+                        <i class="fa-solid fa-book-open-reader"></i>
+                    </div>
+
+                    <h3>Find answers before you apply or request care.</h3>
+
+                    <p>
+                        These FAQs explain common care program topics in simple language so families can better
+                        understand what may be needed before contacting our team.
+                    </p>
+
+                    <div class="blog-mini-list">
+                        <span>
+                            <i class="fa-solid fa-check"></i>
+                            Caregiver eligibility requirements
+                        </span>
+
+                        <span>
+                            <i class="fa-solid fa-check"></i>
+                            Family members who may qualify
+                        </span>
+
+                        <span>
+                            <i class="fa-solid fa-check"></i>
+                            CHAMPS and Home Help guidance
+                        </span>
+
+                        <span>
+                            <i class="fa-solid fa-check"></i>
+                            Documents and next-step support
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+            FAQ CONTROLS
+        ========================== -->
+        <section class="faq-control-section">
+
+            <div class="container">
+
+                <div class="section-heading center">
+                    <span class="section-kicker">Questions & Answers</span>
+
+                    <h2>Search caregiver and home care questions.</h2>
+
+                    <p>
+                        Use the search box or filters below to quickly find the topic your family needs.
+                    </p>
+                </div>
+
+                <div class="faq-control-panel">
+
+                    <div class="faq-search-box">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="search" id="faqSearch" placeholder="Search questions, CHAMPS, caregiver, documents, eligibility...">
+                    </div>
+
+                    <div class="faq-action-buttons">
+                        <button type="button" class="faq-small-btn" id="openAllFaq">
+                            Open All
+                        </button>
+
+                        <button type="button" class="faq-small-btn" id="closeAllFaq">
+                            Close All
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="faq-filter-chips" id="faqFilters">
+                    <button type="button" class="faq-filter-chip active" data-filter="all">All</button>
+                    <button type="button" class="faq-filter-chip" data-filter="eligibility">Eligibility</button>
+                    <button type="button" class="faq-filter-chip" data-filter="family">Family Caregiver</button>
+                    <button type="button" class="faq-filter-chip" data-filter="champs">CHAMPS</button>
+                    <button type="button" class="faq-filter-chip" data-filter="home-help">Home Help</button>
+                    <button type="button" class="faq-filter-chip" data-filter="documents">Documents</button>
+                    <button type="button" class="faq-filter-chip" data-filter="support">How We Help</button>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+            FAQ LIST
+        ========================== -->
+        <section class="faq-main-section" id="faqList">
+
+            <div class="container">
+
+                <div class="faq-results-bar">
+                    <span id="faqResultText">Showing all questions</span>
+                    <span><strong id="faqCount">24</strong> FAQs</span>
+                </div>
+
+                <div class="faq-accordion-list" id="faqAccordion">
+
+                    <!-- FAQ 01 -->
+                    <article class="faq-accordion-item active" data-category="eligibility">
+                        <button type="button" class="faq-question-btn">
+                            <span class="faq-number">01</span>
+
+                            <span class="faq-question-text">
+                                <span>Eligibility</span>
+                                <h3>Who can become a paid caregiver in Michigan?</h3>
+                            </span>
+
+                            <span class="faq-toggle-icon">
+                                <i class="fa-solid fa-plus"></i>
+                            </span>
+                        </button>
+
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">
+                                A paid caregiver may be a qualified adult chosen by the person receiving care.
+                                This may include certain family members, relatives, friends, neighbors, or another
+                                trusted person. The caregiver still needs to meet program requirements, complete
+                                required steps, and be approved through the proper process.
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- FAQ 02 -->
+                    <article class="faq-accordion-item" data-category="eligibility">
+                        <button type="button" class="faq-question-btn">
+                            <span class="faq-number">02</span>
+
+                            <span class="faq-question-text">
+                                <span>Eligibility</span>
+                                <h3>What are the basic caregiver eligibility requirements?</h3>
+                            </span>
+
+                            <span class="faq-toggle-icon">
+                                <i class="fa-solid fa-plus"></i>
+                            </span>
+                        </button>
+
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">
+                                General requirements may include:
+                                <ul>
+                                    <li><i class="fa-solid fa-check"></i>Be at least 18 years old.</li>
+                                    <li><i class="fa-solid fa-check"></i>Be legally authorized to work in the United States.</li>
+                                    <li><i class="fa-solid fa-check"></i>Have a valid Social Security Number or Tax Identification Number.</li>
+                                    <li><i class="fa-solid fa-check"></i>Complete Michigan CHAMPS provider enrollment when required.</li>
+                                    <li><i class="fa-solid fa-check"></i>Pass background screening and verification checks.</li>
+                                    <li><i class="fa-solid fa-check"></i>Be able to safely follow care plans and program rules.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- FAQ 03 -->
+                    <article class="faq-accordion-item" data-category="family">
+                        <button type="button" class="faq-question-btn">
+                            <span class="faq-number">03</span>
+
+                            <span class="faq-question-text">
+                                <span>Family Caregiver</span>
+                                <h3>Can a family member get paid to care for a loved one?</h3>
+                            </span>
+
+                            <span class="faq-toggle-icon">
+                                <i class="fa-solid fa-plus"></i>
+                            </span>
+                        </button>
+
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">
+                                In many situations, certain family members may be considered as caregivers if they
+                                meet the requirements and are selected by the participant. The relationship,
+                                program rules, required documents, and approval process all matter.
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- FAQ 04 -->
+                    <article class="faq-accordion-item" data-category="family">
+                        <button type="button" class="faq-question-btn">
+                            <span class="faq-number">04</span>
+
+                            <span class="faq-question-text">
+                                <span>Family Caregiver</span>
+                                <h3>Which family members may qualify as caregivers?</h3>
+                            </span>
+
+                            <span class="faq-toggle-icon">
+                                <i class="fa-solid fa-plus"></i>
+                            </span>
+                        </button>
+
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">
+                                Depending on the situation, possible caregivers may include adult children,
+                                grandchildren, siblings, grandparents, other relatives, friends, neighbors,
+                                or another trusted person selected by the person receiving care.
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- FAQ 05 -->
+                    <article class="faq-accordion-item" data-category="family">
+                        <button type="button" class="faq-question-btn">
+                            <span class="faq-number">05</span>
+
+                            <span class="faq-question-text">
+                                <span>Family Caregiver</span>
+                                <h3>Can a spouse be paid as a caregiver?</h3>
+                            </span>
+
+                            <span class="faq-toggle-icon">
+                                <i class="fa-solid fa-plus"></i>
+                            </span>
+                        </button>
+
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">
+                                A spouse caring for their husband or wife is generally not eligible for payment
+                                through the Michigan Home Help Program. If your family is unsure about a specific
+                                situation, Michigan Family Caregiver LLC can help explain common rules and next steps.
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- FAQ 06 -->
+                    <article class="faq-accordion-item" data-category="family">
+                        <button type="button" class="faq-question-btn">
+                            <span class="faq-number">06</span>
+
+                            <span class="faq-question-text">
+                                <span>Family Caregiver</span>
+                                <h3>Can a parent be paid to care for their minor child?</h3>
+                            </span>
+
+                            <span class="faq-toggle-icon">
+                                <i class="fa-solid fa-plus"></i>
+                            </span>
+                        </button>
+
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">
+                                Parents caring for their own minor child are generally not eligible for payment
+                                under the Home Help Program. Program rules may vary by situation, so families
+                                should ask for guidance before making assumptions.
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- FAQ 07 -->
+                    <article class="faq-accordion-item" data-category="champs">
+                        <button type="button" class="faq-question-btn">
+                            <span class="faq-number">07</span>
+
+                            <span class="faq-question-text">
+                                <span>CHAMPS</span>
+                                <h3>What is CHAMPS enrollment?</h3>
+                            </span>
+
+                            <span class="faq-toggle-icon">
+                                <i class="fa-solid fa-plus"></i>
+                            </span>
+                        </button>
+
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">
+                                CHAMPS is part of Michigan’s provider enrollment process. A caregiver may need
+                                to complete CHAMPS enrollment before becoming approved for certain care-related
+                                services. Michigan Family Caregiver LLC can help families understand the enrollment
+                                steps and what information may be needed.
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- FAQ 08 -->
+                    <article class="faq-accordion-item" data-category="champs">
+                        <button type="button" class="faq-question-btn">
+                            <span class="faq-number">08</span>
+
+                            <span class="faq-question-text">
+                                <span>CHAMPS</span>
+                                <h3>Can Michigan Family Caregiver LLC help with CHAMPS?</h3>
+                            </span>
+
+                            <span class="faq-toggle-icon">
+                                <i class="fa-solid fa-plus"></i>
+                            </span>
+                        </button>
+
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">
+                                Yes. We can help caregivers understand CHAMPS provider enrollment, prepare
+                                required information, and move through the process with clearer guidance.
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- FAQ 09 -->
+                    <article class="faq-accordion-item" data-category="home-help">
+                        <button type="button" class="faq-question-btn">
+                            <span class="faq-number">09</span>
+
+                            <span class="faq-question-text">
+                                <span>Home Help</span>
+                                <h3>What is the Michigan Home Help Program?</h3>
+                            </span>
+
+                            <span class="faq-toggle-icon">
+                                <i class="fa-solid fa-plus"></i>
+                            </span>
+                        </button>
+
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">
+                                The Michigan Home Help Program may support eligible individuals who need help
+                                with daily living activities while staying in their own home. The program can
+                                involve care needs, caregiver selection, required documentation, and approval steps.
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- FAQ 10 -->
+                    <article class="faq-accordion-item" data-category="home-help">
+                        <button type="button" class="faq-question-btn">
+                            <span class="faq-number">10</span>
+
+                            <span class="faq-question-text">
+                                <span>Home Help</span>
+                                <h3>Who chooses the caregiver under the Home Help Program?</h3>
+                            </span>
+
+                            <span class="faq-toggle-icon">
+                                <i class="fa-solid fa-plus"></i>
+                            </span>
+                        </button>
+
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">
+                                The person receiving care generally selects and approves the caregiver. The caregiver
+                                must still meet requirements, complete necessary forms, and follow program guidelines.
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- FAQ 11 -->
+                    <article class="faq-accordion-item" data-category="documents">
+                        <button type="button" class="faq-question-btn">
+                            <span class="faq-number">11</span>
+
+                            <span class="faq-question-text">
+                                <span>Documents</span>
+                                <h3>What documents may be needed for caregiver enrollment?</h3>
+                            </span>
+
+                            <span class="faq-toggle-icon">
+                                <i class="fa-solid fa-plus"></i>
+                            </span>
+                        </button>
+
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">
+                                Documents may include identification, work authorization details, Social Security
+                                Number or Tax ID information, CHAMPS enrollment details, background screening items,
+                                program forms, and other supporting paperwork depending on the situation.
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- FAQ 12 -->
+                    <article class="faq-accordion-item" data-category="documents">
+                        <button type="button" class="faq-question-btn">
+                            <span class="faq-number">12</span>
+
+                            <span class="faq-question-text">
+                                <span>Documents</span>
+                                <h3>Do caregivers need to keep timesheets or records?</h3>
+                            </span>
+
+                            <span class="faq-toggle-icon">
+                                <i class="fa-solid fa-plus"></i>
+                            </span>
+                        </button>
+
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">
+                                Caregivers may need to maintain accurate timesheets, service notes, and required
+                                documentation. Keeping records organized is important for program compliance and
+                                ongoing support.
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- FAQ 13 -->
+                    <article class="faq-accordion-item" data-category="eligibility">
+                        <button type="button" class="faq-question-btn">
+                            <span class="faq-number">13</span>
+
+                            <span class="faq-question-text">
+                                <span>Eligibility</span>
+                                <h3>Does a caregiver need reliable transportation?</h3>
+                            </span>
+
+                            <span class="faq-toggle-icon">
+                                <i class="fa-solid fa-plus"></i>
+                            </span>
+                        </button>
+
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">
+                                Reliable transportation may be necessary depending on the care situation, service
+                                expectations, appointment needs, and communication requirements. The exact need
+                                can vary by participant and care plan.
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- FAQ 14 -->
+                    <article class="faq-accordion-item" data-category="eligibility">
+                        <button type="button" class="faq-question-btn">
+                            <span class="faq-number">14</span>
+
+                            <span class="faq-question-text">
+                                <span>Eligibility</span>
+                                <h3>Does the caregiver need to pass a background check?</h3>
+                            </span>
+
+                            <span class="faq-toggle-icon">
+                                <i class="fa-solid fa-plus"></i>
+                            </span>
+                        </button>
+
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">
+                                Caregivers may be required to pass background screening and verification checks.
+                                This helps protect the person receiving care and ensures program requirements are met.
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- FAQ 15 -->
+                    <article class="faq-accordion-item" data-category="support">
+                        <button type="button" class="faq-question-btn">
+                            <span class="faq-number">15</span>
+
+                            <span class="faq-question-text">
+                                <span>How We Help</span>
+                                <h3>How can Michigan Family Caregiver LLC help my family?</h3>
+                            </span>
+
+                            <span class="faq-toggle-icon">
+                                <i class="fa-solid fa-plus"></i>
+                            </span>
+                        </button>
+
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">
+                                We can help with caregiver eligibility screening, CHAMPS enrollment assistance,
+                                Home Help application guidance, required paperwork support, ongoing caregiver support,
+                                and Medicaid Home Help Program navigation.
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- FAQ 16 -->
+                    <article class="faq-accordion-item" data-category="support">
+                        <button type="button" class="faq-question-btn">
+                            <span class="faq-number">16</span>
+
+                            <span class="faq-question-text">
+                                <span>How We Help</span>
+                                <h3>Can you help me understand if I qualify?</h3>
+                            </span>
+
+                            <span class="faq-toggle-icon">
+                                <i class="fa-solid fa-plus"></i>
+                            </span>
+                        </button>
+
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">
+                                Yes. You can contact our team and share your situation. We can help explain common
+                                requirements, what may be needed, and which next steps may apply to your family.
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- FAQ 17 -->
+                    <article class="faq-accordion-item" data-category="home-help">
+                        <button type="button" class="faq-question-btn">
+                            <span class="faq-number">17</span>
+
+                            <span class="faq-question-text">
+                                <span>Home Help</span>
+                                <h3>What kind of care needs may be supported?</h3>
+                            </span>
+
+                            <span class="faq-toggle-icon">
+                                <i class="fa-solid fa-plus"></i>
+                            </span>
+                        </button>
+
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">
+                                Care needs may include personal care, hygiene support, meal preparation, mobility
+                                assistance, transfer support, reminders, companionship, and other daily living needs
+                                based on the person’s situation and approved care plan.
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- FAQ 18 -->
+                    <article class="faq-accordion-item" data-category="family">
+                        <button type="button" class="faq-question-btn">
+                            <span class="faq-number">18</span>
+
+                            <span class="faq-question-text">
+                                <span>Family Caregiver</span>
+                                <h3>Can a friend or neighbor become a caregiver?</h3>
+                            </span>
+
+                            <span class="faq-toggle-icon">
+                                <i class="fa-solid fa-plus"></i>
+                            </span>
+                        </button>
+
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">
+                                A trusted friend, neighbor, or chosen person may be considered if the participant
+                                selects them and the caregiver meets program requirements. Approval still depends
+                                on the required process.
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- FAQ 19 -->
+                    <article class="faq-accordion-item" data-category="documents">
+                        <button type="button" class="faq-question-btn">
+                            <span class="faq-number">19</span>
+
+                            <span class="faq-question-text">
+                                <span>Documents</span>
+                                <h3>Should I gather documents before contacting your team?</h3>
+                            </span>
+
+                            <span class="faq-toggle-icon">
+                                <i class="fa-solid fa-plus"></i>
+                            </span>
+                        </button>
+
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">
+                                It helps to have basic personal information, contact details, identification,
+                                and care-related questions ready. If you are unsure what documents are needed,
+                                our team can help you understand what to prepare.
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- FAQ 20 -->
+                    <article class="faq-accordion-item" data-category="support">
+                        <button type="button" class="faq-question-btn">
+                            <span class="faq-number">20</span>
+
+                            <span class="faq-question-text">
+                                <span>How We Help</span>
+                                <h3>Do you only help after someone is approved?</h3>
+                            </span>
+
+                            <span class="faq-toggle-icon">
+                                <i class="fa-solid fa-plus"></i>
+                            </span>
+                        </button>
+
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">
+                                No. We can help families before, during, and after the application or enrollment process.
+                                Our goal is to make the steps clearer and help families avoid confusion.
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- FAQ 21 -->
+                    <article class="faq-accordion-item" data-category="eligibility">
+                        <button type="button" class="faq-question-btn">
+                            <span class="faq-number">21</span>
+
+                            <span class="faq-question-text">
+                                <span>Eligibility</span>
+                                <h3>Does the caregiver need to be physically and mentally able to provide care?</h3>
+                            </span>
+
+                            <span class="faq-toggle-icon">
+                                <i class="fa-solid fa-plus"></i>
+                            </span>
+                        </button>
+
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">
+                                Yes. A caregiver should be able to safely perform the required support tasks,
+                                follow the care plan, communicate clearly, and respond responsibly to the needs
+                                of the person receiving care.
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- FAQ 22 -->
+                    <article class="faq-accordion-item" data-category="home-help">
+                        <button type="button" class="faq-question-btn">
+                            <span class="faq-number">22</span>
+
+                            <span class="faq-question-text">
+                                <span>Home Help</span>
+                                <h3>Can Home Help support help someone stay at home?</h3>
+                            </span>
+
+                            <span class="faq-toggle-icon">
+                                <i class="fa-solid fa-plus"></i>
+                            </span>
+                        </button>
+
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">
+                                For eligible individuals, home-based support may help them remain in a familiar
+                                environment while receiving assistance with approved daily living needs.
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- FAQ 23 -->
+                    <article class="faq-accordion-item" data-category="support">
+                        <button type="button" class="faq-question-btn">
+                            <span class="faq-number">23</span>
+
+                            <span class="faq-question-text">
+                                <span>How We Help</span>
+                                <h3>What should I do if I am not sure where to start?</h3>
+                            </span>
+
+                            <span class="faq-toggle-icon">
+                                <i class="fa-solid fa-plus"></i>
+                            </span>
+                        </button>
+
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">
+                                Start by contacting Michigan Family Caregiver LLC. Tell us who needs care,
+                                what support is needed, and what questions you have. We can help identify
+                                the most practical next step.
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- FAQ 24 -->
+                    <article class="faq-accordion-item" data-category="support">
+                        <button type="button" class="faq-question-btn">
+                            <span class="faq-number">24</span>
+
+                            <span class="faq-question-text">
+                                <span>How We Help</span>
+                                <h3>How do I contact Michigan Family Caregiver LLC?</h3>
+                            </span>
+
+                            <span class="faq-toggle-icon">
+                                <i class="fa-solid fa-plus"></i>
+                            </span>
+                        </button>
+
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">
+                                You can call us at <a href="tel:+18102073799">(810) 207-3799</a>, email
+                                <a href="mailto:info@michiganfamilycaregiverllc.com">info@michiganfamilycaregiverllc.com</a>,
+                                or submit a request through the contact page.
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+
+                <div class="faq-no-results" id="faqNoResults">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <h3>No matching questions found</h3>
+                    <p>Try another keyword or select a different category.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+            BLOG CTA
+        ========================== -->
+        <section class="blog-cta-section">
+
+            <div class="container blog-cta-box">
+
+                <div>
+                    <span class="section-kicker light">Need Personalized Help?</span>
+
+                    <h2>Still have questions about caregiver eligibility or care support?</h2>
+
+                    <p>
+                        Every family situation is different. Contact Michigan Family Caregiver LLC and our team
+                        will help you understand care options, caregiver steps, CHAMPS enrollment, Home Help guidance,
+                        and required paperwork.
+                    </p>
+                </div>
+
+                <a href="contact.html" class="btn btn-gold">
+                    Ask Our Team
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+        SUCCESS MODAL
+    ========================== -->
+    <div class="modal-overlay" id="successModal">
+        <div class="success-modal">
+
+            <button class="modal-close" id="modalClose" aria-label="Close modal">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <div class="success-icon">
+                <i class="fa-solid fa-check"></i>
+            </div>
+
+            <h2>Thank you for submitting!</h2>
+            <p>Our team will contact you soon.</p>
+
+            <button class="btn btn-primary" id="modalDoneBtn">
+                Done
+            </button>
+
+        </div>
+    </div>
+
+
+    <!-- =========================
+        FOOTER
+    ========================== -->
+    <footer class="footer">
+
+        <div class="newsletter-section">
+            <div class="container newsletter-box">
+
+                <h2>Stay Connected with Our Newsletter!</h2>
+
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit">Submit</button>
+                </form>
+
+            </div>
+        </div>
+
+        <div class="social-footer">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">X</a>
+            <a href="#">TikTok</a>
+            <a href="#">YouTube</a>
+        </div>
+
+        <div class="container footer-main">
+
+            <div class="footer-brand">
+                <img src="assets/images/logo.png" alt="Michigan Family Caregiver LLC Logo">
+
+                <h3>Michigan Family Caregiver LLC</h3>
+
+                <p>
+                    Care. Comfort. Community. Right here in Michigan.
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="career.html">Career</a>
+                <a href="resources.html">Resources</a>
+                <a href="blog.html">Blog</a>
+            </div>
+
+            <div class="footer-links contact-links">
+
+                <h4>Contact Us</h4>
+
+                <a href="tel:+18102073799">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>(810) 207-3799</span>
+                </a>
+
+                <a href="tel:+18102073999">
+                    <i class="fa-solid fa-fax"></i>
+                    <span>Fax: (810) 207-3999</span>
+                </a>
+
+                <a href="mailto:info@michiganfc.com">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>info@michiganfamilycaregiverllc.com</span>
+                </a>
+
+                <a href="https://maps.app.goo.gl/53RwJ7epQXeNBymy7">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>2700 Robert T Longway Blvd, STE D, Flint, MI 48503</span>
+                </a>
+
+            </div>
+
+            <div class="footer-links">
+                <h4>Legal</h4>
+
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="terms-and-conditions.html">Terms and Conditions</a>
+                <a href="disclaimer.html">Disclaimer</a>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Michigan Family Caregiver LLC. All Rights Reserved.</p>
+        </div>
+
+    </footer>
+
+
+    <!-- =========================
+        MAIN JS
+    ========================== -->
+    <script src="js/main.js"></script>
+
+
+    <!-- =========================
+        FAQ PAGE JS
+    ========================== -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const faqItems = Array.from(document.querySelectorAll(".faq-accordion-item"));
+            const faqSearch = document.getElementById("faqSearch");
+            const faqCount = document.getElementById("faqCount");
+            const faqResultText = document.getElementById("faqResultText");
+            const faqNoResults = document.getElementById("faqNoResults");
+            const filterButtons = Array.from(document.querySelectorAll(".faq-filter-chip"));
+            const openAllBtn = document.getElementById("openAllFaq");
+            const closeAllBtn = document.getElementById("closeAllFaq");
+
+            let activeFilter = "all";
+
+            function initializeFaq() {
+                faqItems.forEach(function (item) {
+                    const button = item.querySelector(".faq-question-btn");
+                    const answer = item.querySelector(".faq-answer");
+
+                    if (item.classList.contains("active")) {
+                        answer.style.maxHeight = answer.scrollHeight + "px";
+                    }
+
+                    button.addEventListener("click", function () {
+                        toggleFaq(item);
+                    });
+                });
+
+                updateFaqView();
+            }
+
+            function toggleFaq(item) {
+                const answer = item.querySelector(".faq-answer");
+
+                item.classList.toggle("active");
+
+                if (item.classList.contains("active")) {
+                    answer.style.maxHeight = answer.scrollHeight + "px";
+                } else {
+                    answer.style.maxHeight = null;
+                }
+            }
+
+            function openFaq(item) {
+                const answer = item.querySelector(".faq-answer");
+
+                item.classList.add("active");
+                answer.style.maxHeight = answer.scrollHeight + "px";
+            }
+
+            function closeFaq(item) {
+                const answer = item.querySelector(".faq-answer");
+
+                item.classList.remove("active");
+                answer.style.maxHeight = null;
+            }
+
+            function updateFaqView() {
+                const searchTerm = faqSearch.value.toLowerCase().trim();
+                let visibleCount = 0;
+
+                faqItems.forEach(function (item) {
+                    const category = item.dataset.category;
+                    const text = item.innerText.toLowerCase();
+
+                    const matchesFilter = activeFilter === "all" || category === activeFilter;
+                    const matchesSearch = !searchTerm || text.includes(searchTerm);
+
+                    if (matchesFilter && matchesSearch) {
+                        item.classList.remove("faq-hidden");
+                        visibleCount++;
+                    } else {
+                        item.classList.add("faq-hidden");
+                    }
+                });
+
+                faqCount.textContent = visibleCount;
+
+                if (activeFilter === "all" && !searchTerm) {
+                    faqResultText.textContent = "Showing all questions";
+                } else if (searchTerm) {
+                    faqResultText.textContent = `Showing results for "${searchTerm}"`;
+                } else {
+                    faqResultText.textContent = "Showing filtered questions";
+                }
+
+                if (visibleCount === 0) {
+                    faqNoResults.classList.add("active");
+                } else {
+                    faqNoResults.classList.remove("active");
+                }
+            }
+
+            faqSearch.addEventListener("input", updateFaqView);
+
+            filterButtons.forEach(function (button) {
+                button.addEventListener("click", function () {
+                    filterButtons.forEach(function (btn) {
+                        btn.classList.remove("active");
+                    });
+
+                    button.classList.add("active");
+                    activeFilter = button.dataset.filter;
+                    updateFaqView();
+                });
+            });
+
+            openAllBtn.addEventListener("click", function () {
+                faqItems.forEach(function (item) {
+                    if (!item.classList.contains("faq-hidden")) {
+                        openFaq(item);
+                    }
+                });
+            });
+
+            closeAllBtn.addEventListener("click", function () {
+                faqItems.forEach(function (item) {
+                    closeFaq(item);
+                });
+            });
+
+            initializeFaq();
+        });
+    </script>
+
+
+
+<style>
+.back-to-top{
+position:fixed;
+right:28px;
+bottom:28px;
+width:58px;
+height:58px;
+border:none;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+background:linear-gradient(135deg,var(--gold-bright),var(--gold-main),var(--gold-dark));
+color:#fff;
+font-size:1.15rem;
+cursor:pointer;
+z-index:9999;
+opacity:0;
+visibility:hidden;
+transform:translateY(20px);
+transition:all .35s ease;
+box-shadow:0 12px 30px rgba(0,0,0,.22);
+}
+
+.back-to-top.show{
+opacity:1;
+visibility:visible;
+transform:translateY(0);
+}
+
+.back-to-top:hover{
+transform:translateY(-6px);
+box-shadow:0 18px 40px rgba(0,0,0,.28);
+}
+
+.back-to-top i{
+pointer-events:none;
+}
+
+body.dark-mode .back-to-top{
+box-shadow:0 12px 30px rgba(0,0,0,.45);
+}
+
+@media(max-width:768px){
+.back-to-top{
+width:52px;
+height:52px;
+right:18px;
+bottom:18px;
+font-size:1rem;
+}
+}
+</style>
+
+<button class="back-to-top" id="backToTop">
+<i class="fa-solid fa-arrow-up"></i>
+</button>
+
+<script>
+const backToTopBtn=document.getElementById("backToTop");
+
+window.addEventListener("scroll",function(){
+if(window.scrollY>400){
+backToTopBtn.classList.add("show");
+}else{
+backToTopBtn.classList.remove("show");
+}
+});
+
+backToTopBtn.addEventListener("click",function(){
+window.scrollTo({
+top:0,
+behavior:"smooth"
+});
+});
+</script>
+
+</body>
+</html>

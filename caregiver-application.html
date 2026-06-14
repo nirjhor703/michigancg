@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- =========================
+        BASIC META
+    ========================== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caregiver Application | Michigan Family Caregiver LLC</title>
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png">
+    <link rel="apple-touch-icon" href="assets/images/favicon.png">
+    <meta name="description" content="Employment application form for caregiver opportunities at Michigan Family Caregiver LLC.">
+
+    <!-- =========================
+        GOOGLE FONT
+    ========================== -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- =========================
+        FONT AWESOME
+    ========================== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- =========================
+        CSS FILES
+    ========================== -->
+
+    <link rel="stylesheet" href="css/test.css">
+</head>
+
+<body>
+
+    <!-- =========================
+        TOP BAR
+    ========================== -->
+    <div class="top-bar">
+        <div class="container top-bar-inner">
+
+            <div class="top-left">
+                <a href="tel:+18102073799">
+                    <i class="fa-solid fa-phone"></i>
+                    (810) 207-3799
+                </a>
+
+                <a href="fax:+18102073999">
+                    <i class="fa-solid fa-fax"></i>
+                    Fax: (810) 207-3999
+                </a>
+
+                <a href="mailto:info@michiganfamilycaregiverllc.com">
+                    <i class="fa-solid fa-envelope"></i>
+                    info@michiganfamilycaregiverllc.com
+                </a>
+
+                <a href="https://maps.app.goo.gl/53RwJ7epQXeNBymy7">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>2700 Robert T Longway Blvd, STE D, Flint, MI 48503</span>
+                </a>
+            </div>
+
+            <div class="top-right">
+                <a href="#" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="#" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#" aria-label="X">X</a>
+
+                <a href="#" aria-label="TikTok">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+
+                <select class="language-select" aria-label="Select language">
+                    <option value="en">English</option>
+                    <option value="es">Spanish</option>
+                    <option value="bn">Bangla</option>
+                </select>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- =========================
+        HEADER
+    ========================== -->
+    <header class="main-header" id="mainHeader">
+        <div class="container header-inner">
+
+            <a href="index.html" class="logo-box">
+                <img src="assets/images/logo.png" alt="Michigan Family Caregiver LLC Logo">
+
+                <div class="logo-text">
+                    <h1>Michigan Family Caregiver</h1>
+                    <span>LLC</span>
+                </div>
+            </a>
+
+            <nav class="navbar" id="navbar">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="career.html" class="active">Career</a>
+                <a href="resources.html">Resources</a>
+                <a href="blog.html">Blog</a>
+            </nav>
+
+            <div class="header-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark and light theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+
+                <button class="hamburger" id="hamburger" aria-label="Open menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+
+        </div>
+    </header>
+
+
+<main>
+
+        <section class="application-page-header">
+            <div class="container">
+
+                <div class="application-header-box">
+
+                    <a href="career.html" class="application-back-link">
+                        <i class="fa-solid fa-arrow-left"></i>
+                        Back to Career
+                    </a>
+
+                    <div class="application-header-content">
+                        <span class="section-kicker">Employment Application</span>
+
+                        <h1>Caregiver Application Form</h1>
+
+                        <p>
+                            Please complete the form below carefully. Your application will be reviewed by
+                            Michigan Family Caregiver LLC for current or future caregiver opportunities.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="application-form-section">
+            <div class="container">
+
+                <form id="caregiverApplicationForm" class="caregiver-application-form" enctype="multipart/form-data">
+
+                    <input type="hidden" name="Form Type" value="Caregiver Employment Application">
+                    <input type="hidden" name="Submitted From" value="caregiver-application.html">
+
+
+                    <div class="app-form-card">
+
+                        <div class="app-section-title">
+                            <h2>Personal Information</h2>
+                            <span></span>
+                        </div>
+
+                        <div class="app-grid two-col">
+
+                            <div class="form-group">
+                                <label for="firstName">First Name</label>
+                                <input type="text" id="firstName" name="First Name" placeholder="First Name" required>
+                                <small class="field-error"></small>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" id="lastName" name="Last Name" placeholder="Last Name" required>
+                                <small class="field-error"></small>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="dob">Date of Birth</label>
+                                <input type="date" id="dob" name="DOB" required>
+                                <small class="field-error"></small>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="mobilePhone">Phone Number</label>
+                                <input type="tel" id="mobilePhone" name="Mobile Phone" placeholder="Phone Number" required>
+                                <small class="field-error"></small>
+                            </div>
+
+                        </div>
+
+                        <div class="app-grid one-col" style="margin-top: 15px;">
+                            <div class="form-group">
+                                <label for="applicantEmail">Email Address</label>
+                                <input type="email" id="applicantEmail" name="Email Address" placeholder="Email Address" required>
+                                <small class="field-error"></small>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="app-form-card">
+
+                        <div class="app-section-title">
+                            <h2>Address Information</h2>
+                            <span></span>
+                        </div>
+
+                        <div class="app-grid two-col">
+                            <div class="form-group">
+                                <label for="addressLine1">Address Line 1</label>
+                                <input type="text" id="addressLine1" name="Address Line 1" placeholder="Address Line 1" required>
+                                <small class="field-error"></small>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="addressLine2">Address Line 2 (Optional)</label>
+                                <input type="text" id="addressLine2" name="Address Line 2" placeholder="Address Line 2">
+                                <small class="field-error"></small>
+                            </div>
+                        </div>
+
+                        <div class="app-grid four-col">
+                            <div class="form-group">
+                                <label for="zipCode">Zip Code</label>
+                                <input type="text" id="zipCode" name="Zip Code" placeholder="Zip Code" required>
+                                <small class="field-error"></small>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="city">City</label>
+                                <input type="text" id="city" name="City" placeholder="City" required>
+                                <small class="field-error"></small>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="state">Select State</label>
+                                <select id="state" name="State" required>
+                                    <option value="">Select State</option>
+                                    <option value="Michigan">Michigan</option>
+                                    <option value="Ohio">Ohio</option>
+                                    <option value="Indiana">Indiana</option>
+                                    <option value="Illinois">Illinois</option>
+                                </select>
+                                <small class="field-error"></small>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="country">Select Country</label>
+                                <select id="country" name="Country" required>
+                                    <option value="">Select Country</option>
+                                    <option value="United States">United States</option>
+                                </select>
+                                <small class="field-error"></small>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="app-form-card">
+
+                        <div class="app-section-title">
+                            <h2>Required Documents</h2>
+                            <span></span>
+                        </div>
+
+                        <div class="app-grid two-col">
+
+                            <div class="form-group">
+                                <label for="applicantCV">Submit your CV</label>
+                                <input type="file" id="applicantCV" name="Applicant CV" accept=".pdf,.doc,.docx" required>
+                                <small class="field-text">Accepted formats: PDF, DOC, DOCX</small>
+                                <small class="field-error"></small>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="applicantID">Submit your ID for Proof</label>
+                                <input type="file" id="applicantID" name="Applicant ID Proof" accept=".pdf,.jpg,.jpeg,.png" required>
+                                <small class="field-text">Accepted formats: PDF, JPG, PNG (e.g., Driver's License, State ID)</small>
+                                <small class="field-error"></small>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="app-form-card">
+
+                        <div class="app-section-title">
+                            <h2>Consent & Acknowledgement</h2>
+                            <span></span>
+                        </div>
+
+                        <div class="signature-box">
+
+                            <label class="agreement-check" style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 25px; cursor: pointer;">
+                                <input type="checkbox" name="Applicant Consent" value="Agreed" required style="margin-top: 4px;">
+                                <span>I certify that I am submitting this application voluntarily, and all the information provided above is true, accurate, and complete to the best of my knowledge.</span>
+                            </label>
+
+                            <div class="app-grid two-col">
+                                <div class="form-group">
+                                    <label for="signatureName">Applicant Full Name (Digital Signature)</label>
+                                    <input type="text" id="signatureName" name="Signature Name" placeholder="Type your full name to sign" required>
+                                    <small class="field-error"></small>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="signatureDate">Date</label>
+                                    <input type="date" id="signatureDate" name="Signature Date" required>
+                                    <small class="field-error"></small>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="application-actions">
+                        <button type="reset" class="btn btn-light">
+                            Cancel
+                        </button>
+
+                        <button type="submit" class="btn btn-primary" id="caregiverApplicationSubmitBtn">
+                            Submit Application
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </div>
+
+                </form>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+        FOOTER
+    ========================== -->
+    <footer class="footer">
+
+        <div class="newsletter-section">
+            <div class="container newsletter-box">
+
+                <h2>Stay Connected with Our Newsletter!</h2>
+
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit">Submit</button>
+                </form>
+
+            </div>
+        </div>
+
+        <div class="social-footer">
+            <a href="#" aria-label="Facebook">Facebook</a>
+            <a href="#" aria-label="Instagram">Instagram</a>
+            <a href="#" aria-label="X">X</a>
+            <a href="#" aria-label="TikTok">TikTok</a>
+            <a href="#" aria-label="YouTube">YouTube</a>
+        </div>
+
+        <div class="container footer-main">
+
+            <div class="footer-brand">
+                <img src="assets/images/logo.png" alt="Michigan Family Caregiver LLC Logo">
+
+                <h3>Michigan Family Caregiver LLC</h3>
+
+                <p>
+                    Care. Comfort. Community. Right here in Michigan.
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="career.html">Career</a>
+                <a href="resources.html">Resources</a>
+                <a href="blog.html">Blog</a>
+            </div>
+
+            <div class="footer-links contact-links">
+
+                <h4>Contact Us</h4>
+
+                <a href="tel:+18102073799">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>(810) 207-3799</span>
+                </a>
+
+                <a href="tel:+18102073999">
+                    <i class="fa-solid fa-fax"></i>
+                    <span>Fax: (810) 207-3999</span>
+                </a>
+
+                <a href="mailto:info@michiganfc.com">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>info@michiganfamilycaregiverllc.com</span>
+                </a>
+
+                <a href="https://maps.app.goo.gl/53RwJ7epQXeNBymy7">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>2700 Robert T Longway Blvd, STE D, Flint, MI 48503</span>
+                </a>
+
+            </div>
+
+            <div class="footer-links">
+                <h4>Legal</h4>
+
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="terms-and-conditions.html">Terms and Conditions</a>
+                <a href="disclaimer.html">Disclaimer</a>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Michigan Family Caregiver LLC. All Rights Reserved.</p>
+        </div>
+
+    </footer>
+
+
+    <!-- =========================
+        SUCCESS MODAL
+    ========================== -->
+    <div class="modal-overlay" id="successModal">
+        <div class="success-modal">
+
+            <button class="modal-close" id="modalClose" aria-label="Close modal">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <div class="success-icon">
+                <i class="fa-solid fa-check"></i>
+            </div>
+
+            <h2>Thank you for submitting!</h2>
+            <p>Our team will contact you soon.</p>
+
+            <button class="btn btn-primary" id="modalDoneBtn">
+                Done
+            </button>
+
+        </div>
+    </div>
+
+
+
+
+<style>
+.back-to-top{
+position:fixed;
+right:28px;
+bottom:28px;
+width:58px;
+height:58px;
+border:none;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+background:linear-gradient(135deg,var(--gold-bright),var(--gold-main),var(--gold-dark));
+color:#fff;
+font-size:1.15rem;
+cursor:pointer;
+z-index:9999;
+opacity:0;
+visibility:hidden;
+transform:translateY(20px);
+transition:all .35s ease;
+box-shadow:0 12px 30px rgba(0,0,0,.22);
+}
+
+.back-to-top.show{
+opacity:1;
+visibility:visible;
+transform:translateY(0);
+}
+
+.back-to-top:hover{
+transform:translateY(-6px);
+box-shadow:0 18px 40px rgba(0,0,0,.28);
+}
+
+.back-to-top i{
+pointer-events:none;
+}
+
+body.dark-mode .back-to-top{
+box-shadow:0 12px 30px rgba(0,0,0,.45);
+}
+
+@media(max-width:768px){
+.back-to-top{
+width:52px;
+height:52px;
+right:18px;
+bottom:18px;
+font-size:1rem;
+}
+}
+</style>
+
+<button class="back-to-top" id="backToTop">
+<i class="fa-solid fa-arrow-up"></i>
+</button>
+
+<script>
+const backToTopBtn=document.getElementById("backToTop");
+
+window.addEventListener("scroll",function(){
+if(window.scrollY>400){
+backToTopBtn.classList.add("show");
+}else{
+backToTopBtn.classList.remove("show");
+}
+});
+
+backToTopBtn.addEventListener("click",function(){
+window.scrollTo({
+top:0,
+behavior:"smooth"
+});
+});
+</script>
+
+    <!-- =========================
+        MAIN JS
+    ========================== -->
+    <script src="js/main.js"></script>
+    <script src="js/career-form.js"></script>
+
+</body>
+</html>
